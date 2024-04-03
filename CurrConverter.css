@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    margin: 3rem;
+    animation-name: example;
+    animation-duration: 1s;
+    color: #6d6d70;
+}
+@keyframes example {
+0%   { opacity: 0;}
+25%  { opacity: 0.5;}
+75%  { opacity: 0.75;}
+100%  { opacity: 1;}
+}
+#main_line{
+    text-align: center;
+    color: #B4B4B8;
+    font-size:3rem;
+}
+#main_line span,#amount{
+    color: #59B4C3;
+    font-weight: bolder;
+    text-shadow: 2px 2px #B4B4B8;
+}
+h2{
+    margin: 1rem;
+    
+}
+.field_area{
+    margin: 1rem;
+}
+#converterBox{
+    display: flex;
+}
+.field_value{
+    padding: 4px;
+    border-radius: 5px;
+    outline: none;
+    border-left:0 ;
+    border-right:0 ;
+    border-top:0 ;
+    font-size: large;
+    width: 12rem;
+}
+.labelcat{
+    font-weight: bold;
+}
+#optional_dropdown{
+    display: none;
+}
+#add_curr{
+    margin: 1rem;
+}
+button{
+    background-color: #59B4C3;
+    color: white;
+    width: 6rem;
+    height: 2rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px #B4B4B8;
+    padding: 1px;
+    border: white;
+    cursor: pointer;
+}
+.hiddentext{
+color: rgb(247, 34, 34);
+display: none;
+}
+#optional_amount{
+    display: none;
+}

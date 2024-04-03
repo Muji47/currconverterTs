@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CurrConverter</title>
+    <link href="CurrConverter.css"  rel="stylesheet"/>
+</head>
+<style>
+ 
+</style>
+<body id="body">
+    <h1 id="main_line"><span>Currency</span> Converter</h1>
+    <h2>Converter</h2>
+    <div id="option_conver">
+        <p>Please select no of conversion:</p>
+        <input type="radio" id="single" name="select_conver" value="single" checked>
+        <label for="single">Single</label><br>
+        <input type="radio" id="multiple" name="select_conver" value="multiple">
+        <label for="multiple">Multiple</label><br>
+    </div>
+    <div id="converterBox">
+        <div class="field_area">
+            <label for="curr_from" class="labelcat">From*:</label>
+            <select id="curr_from" name="curr_from" class="field_value" required>
+                <option value="">Select Currency</option>
+            </select>
+        </div>
+        <div class="field_area">
+            <label for="curr_to" class="labelcat">To*:</label>
+            <select id="curr_to" name="curr_to" class="field_value" >
+                <option value="">Select Currency</option>
+            </select>
+        </div>
+        <div class="field_area" id="optional_dropdown">
+            <label for="curr_to_sec" class="labelcat">To*:</label>
+            <select id="curr_to_sec" name="curr_to" class="field_value" required >
+                <option value="">Select Currency</option>
+            </select>
+        </div>
+    </div>
+    <div id="add_curr">
+        <label for="amountcon">Amount*:</label>
+        <input id="amountcon" name="amountcon" placeholder="Enter Amount" class="field_value" type="number" required />
+        <button onclick="handleChangeAmount()">Convert</button>
+        <p id="validateText" class="hiddentext">Please add value to required fields</p>
+    </div>
+    <h2>Amount After conversion:</h2>
+    <h5 id="aamount">0</h5>
+    <h5 id="optional_amount">0</h5>
+    <script  src="./dist/CurrConverter.js">
+    </script>
+</body>
+</html>
